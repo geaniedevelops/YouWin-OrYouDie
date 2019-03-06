@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game of Thrones Trivia</title>
+
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Seaweed+Script" rel="stylesheet">
+
+    <!-- Local File -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- main container -->
+    <div class="container">
+        <!-- header row -->
+        <div class="row">
+            <h1 class="align-self-center">You Win or You Die</h1>
+        </div>
+        <!-- quiz / image row -->
+        <div class="row">
+            <!-- answer column -->
+            <div class="col m8 s12">    
+            <div class="row">
+                <p id="question" class="text-center" ></p>
+                <p id="remaining-time" class="text-center">Remaining Time: <span id="timer"></span></p>
+            </div>   
+                <div id="game" >                        
+                    </div>
+                <div class="row">
+                    <div id="choices" class="text-center">
+                        <div id="start">
+                            <div class="row">
+                                <img src="https://media.giphy.com/media/l46CtSZN75aR6meE8/giphy.gif" id="throne" class="responsive-img">
+                            </div>
+                            <div class="row">
+                                <div class="btn btn-secondary btn-lg align-self-center grey darken-2">Shall We Begin</div>
+                            </div>
+                        </div>
+                        <div id="options" class="row"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="results" class="text-center"></div>
+                </div>
+            </div>
+            <!-- throne column -->
+            <div class="col m4 s12">
+                <img src="./assets/images/throne.png" id="throne" class="responsive-img">
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./assets/js/app.js"></script>  
+</body>
+</html>

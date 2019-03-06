@@ -1,0 +1,48 @@
+body{
+	text-align: center;
+	max-height: 100vh;
+}
+
+h1 {
+	color: '#4A4A4A';
+}
+
+#throne {
+	padding: 20px;
+}
+
+.jumbotron {
+	background-color: white;
+}
+
+#question {
+	font-family: 'Seaweed Script', cursive;
+	font-size: 35px;
+}
+
+#remaining-time, #results {
+	font-family: 'Seaweed Script', cursive;
+}
+.text-muted{
+	color: blue;
+}
+.last-seconds{
+    color: red;
+}
+
+#answers {
+	background-color: '#7D7A7A';
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.option {
+	margin: 5px;
+	color: white;
+}
+h1 {
+	font-family: 'Cinzel Decorative', cursive;
+}
+/* button {
+	font-family: 'Seaweed Script', cursive;
+	font-weight: 100; */
