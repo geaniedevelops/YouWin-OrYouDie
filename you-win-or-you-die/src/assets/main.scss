@@ -41,7 +41,11 @@ main {
 
     img {
         width: 100%;
-        max-width: 20em;
+        max-width: 15em;
+
+        @media screen and (min-width: 768px) {
+            max-width: 20em;
+        }
     }
 
     a {
@@ -102,6 +106,7 @@ main {
             font-size: 2.5em;
             line-height: 1;
             padding: 0.5em 0.25em;
+            text-align: center;
 
             > input {
                 display: none;

@@ -32,7 +32,12 @@ main {
 }
 .home img {
   width: 100%;
-  max-width: 20em;
+  max-width: 15em;
+}
+@media screen and (min-width: 768px) {
+  .home img {
+    max-width: 20em;
+  }
 }
 .home a.quiz-start {
   background-color: darkgray;
@@ -83,6 +88,7 @@ main {
   font-size: 2.5em;
   line-height: 1;
   padding: 0.5em 0.25em;
+  text-align: center;
 }
 .quiz-answers .option > input {
   display: none;
