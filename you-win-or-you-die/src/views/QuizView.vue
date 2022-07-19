@@ -156,9 +156,14 @@ const NextQuestion = () => {
         <p>Score: {{ score }}/{{ questions.length }}</p>
       </article>
     </section>
-    <section v-else>
-      <h2>Finish</h2>
+    <section class="quiz-results" v-else>
       <p>Your score is {{ score }}/{{ questions.length }}</p>
+      <article v-if="score > 5">
+        <h2>You Win</h2>
+      </article>
+      <article v-else>
+        <h2>You Die</h2>
+      </article>
     </section>
   </main>
 </template>

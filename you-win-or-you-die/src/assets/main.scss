@@ -161,4 +161,16 @@ main {
             font-family: $question-font;
         }
     }
+
+    &-results {
+        p {
+            font-family: $question-font;
+            font-size: 2em;
+        }
+
+        h2 {
+            font-family: $title-font;
+            font-size: 3em;
+        }
+    }
 }

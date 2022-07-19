@@ -126,5 +126,13 @@ main {
 .quiz-control p {
   font-family: "Princess Sofia", cursive;
 }
+.quiz-results p {
+  font-family: "Princess Sofia", cursive;
+  font-size: 2em;
+}
+.quiz-results h2 {
+  font-family: "Cinzel", serif;
+  font-size: 3em;
+}
 
 /*# sourceMappingURL=main.css.map */
