@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: antiquewhite;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.home h1 {
+  font-family: "Cinzel", serif;
+}
+.home img {
+  width: 100%;
+  max-width: 20em;
+}
+.home a.quiz-start {
+  background-color: darkgray;
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  border-radius: 20px;
+  margin-top: 1em;
+  font-family: "Princess Sofia", cursive;
+}
+.home a.quiz-start:hover {
+  background-color: black;
+  transition: 2s;
+}
+.home a.vector-credit {
+  text-decoration: none;
+  color: gray;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 0;
+  top: auto;
+}
+
+.quiz-info h2 {
+  font-family: "Princess Sofia", cursive;
+  font-size: 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.quiz-info h2::after {
+  content: url("./images/underline.svg");
+}
+.quiz-answers {
+  display: grid;
+}
+@media screen and (min-width: 768px) {
+  .quiz-answers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.quiz-answers .option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Square Peg", cursive;
+  font-size: 2.5em;
+  line-height: 1;
+  padding: 0.5em 0.25em;
+}
+.quiz-answers .option > input {
+  display: none;
+}
+.quiz-answers .option::after {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+}
+.quiz-answers .option:hover::after {
+  content: url("./images/circle.svg");
+}
+.quiz-answers .option.wrong::after {
+  content: url("./images/ex.svg");
+}
+.quiz-answers .option.correct::after {
+  content: url("./images/check.svg");
+}
+.quiz-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quiz-control button {
+  font-family: "Cinzel", serif;
+  font-size: 1em;
+  text-align: center;
+  background: none;
+  border: none;
+  margin-bottom: 1em;
+  background-color: black;
+  color: darkgray;
+  padding: 0.5em 0.75em;
+  border-radius: 20px;
+}
+.quiz-control button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.quiz-control p {
+  font-family: "Princess Sofia", cursive;
+}
+
+/*# sourceMappingURL=main.css.map */
