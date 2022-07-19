@@ -165,6 +165,12 @@ const NextQuestion = () => {
         <h2>You Die</h2>
       </article>
     </section>
+    <a
+      class="vector-credit"
+      href="https://www.vecteezy.com/free-vector/pen-line"
+    >
+      Pen Line Vectors by Vecteezy
+    </a>
   </main>
 </template>
 

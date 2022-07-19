@@ -8,11 +8,5 @@ import { RouterLink } from "vue-router";
     <RouterLink to="/quiz" class="quiz-start" target="_self">
       <span>Shall We Begin</span>
     </RouterLink>
-    <a
-      class="vector-credit"
-      href="https://www.vecteezy.com/free-vector/pen-line"
-    >
-      Pen Line Vectors by Vecteezy
-    </a>
   </main>
 </template>

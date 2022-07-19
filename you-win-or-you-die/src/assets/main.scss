@@ -63,15 +63,6 @@ main {
                 transition: 2s;
             }
         }
-
-        &.vector-credit {
-            text-decoration: none;
-            color: gray;
-            opacity: 0.5;
-            position: absolute;
-            bottom: 0;
-            top: auto;
-        }
     }
 }
 
@@ -176,6 +167,15 @@ main {
         h2 {
             font-family: $title-font;
             font-size: 3em;
+        }
+
+        a.vector-credit {
+            text-decoration: none;
+            color: gray;
+            opacity: 0.5;
+            position: absolute;
+            bottom: 0;
+            top: auto;
         }
     }
 }
